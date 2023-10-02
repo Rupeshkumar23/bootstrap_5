@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./style.css">
+  <title>Bootstrap</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <!-- "RK" aligned to the left -->
+        <div class="navbar-brand">
+          <a class="navbar-brand fw-bold fs-2" href="#">R <b>K</b></a>
+        </div>
+        <!-- Toggler button for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navigation links aligned to the right -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link active home" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div id="carouselExampleControlsNoTouching" class="carousel slide carousel-fade" data-bs-touch="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="0" class="active num_1" aria-current="true" aria-label="Slide 1">01</button>
+        <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="1" aria-label="Slide 2 "class="num_1">02</button>
+        <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="2" aria-label="Slide 3" class="num_1">03</button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./Imgs/Hacker.jpg" class="d-block w-100" alt="S_1">
+          <div class="carousel-caption d-none d-md-block head">
+              <h5 class="display-4 fw-bold ">R <span>K</span> Software Solution</h5>
+              <p class="display-5">Learn More Be Smart</p>
+              <button class="Sign_in btn_B ">Sign In</button>
+              <button class="btn_B">Read More</button>
+          </div>
+        </div>
+        <div class="carousel-item " data-bs-interval="2000">
+          <img src="./Imgs/Slide_2.jpg" class="d-block w-100" alt="S_2">
+          <div class="carousel-caption d-none d-md-block head">
+              <h5 class="display-4 fw-bold">R <span>K</span> Software Solution</h5>
+              <p class="display-5">Learn More Be Smart</p>
+              <button class="Sign_in btn_B">Sign In</button>
+              <button class="btn_B">Read More</button>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <img src="./Imgs/Slide_3.jpg" class="d-block w-100" alt="S_3">
+          <div class="carousel-caption d-none d-md-block head">
+              <h5 class="display-4 fw-bold">R <span>K</span> Software Solution</h5>
+              <p class="display-5">Learn More Be Smart</p>
+              <button class="Sign_in btn_B">Sign In</button>
+              <button class="btn_B">Read More</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section id="services" class="mt-5">
+      <hr class="text-white">
+      <hr class="text-white">
+      <hr class="text-white"> 
+      <hr class="text-white"> 
+      <h1 class="display-3 text-center">Our Services</h1>
+      <div class="container-lg d-flex flex-wrap justify-content-center my-5">
+        <div class="card mx-3 my-3  rounded-5 font_C">
+          <i class="fa-solid fa-laptop-code d-flex justify-content-center mt-4 display-3"></i>
+          <div class="card-body">
+            <h3 class="fs-4 fw-bold text-center text-uppercase">Coding</h3>
+            <p class="card-text">Explore the world of programming and coding languages. From Python and JavaScript to Java and C++, embark on a journey to develop software solutions and create digital wonders.</p>
+          </div>
+        </div>
+        <div class="card mx-3 my-3 rounded-5 font_C ">
+          <i class="fa-solid fa-network-wired  d-flex justify-content-center mt-4 display-3"></i>
+          <div class="card-body">
+            <h3 class="fs-4 fw-bold text-center text-uppercase"> Network-Wired</h3>
+            <p class="card-text">Delve into the intricacies of network infrastructure. Learn about wired connections, routers, switches, and the technologies that keep the digital world connected seamlessly.</p>
+          </div>
+        </div>
+        <div class="card mx-3 my-3 rounded-5 font_C ">
+          <i class="fa-solid fa-database d-flex justify-content-center mt-4 display-3"></i>
+          <div class="card-body">
+            <h3 class="fs-4 fw-bold text-center text-uppercase">Database</h3>
+            <p class="card-text">Dive into the realm of databases and data management. Discover the power of structured data storage, retrieval, and analysis, essential for modern applications and information systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <hr class="text-white">
+      <hr class="text-white">
+      <hr class="text-white"> 
+      <hr class="text-white"> 
+      <h1 class="display-3 text-center">About us</h1>
+      <section class="container-md  d-flex align-items-center justify-content-center mt-5" style="background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.7)), url('./Imgs/BG_Or.jpg'); background-size: cover; width: 99.3%;  min-height: 600px;">
+        <div class="row p-4">
+          <div class="col-lg-6">
+            <h1 class="display-5 text-white">Welcome to R<span>K</span> SOFTWARE SOLUTION</h1>
+            <p class="lead text-white">At R K SOFTWARE SOLUTION, we are dedicated to providing cutting-edge solutions and knowledge to empower individuals and businesses. Our mission is to help you succeed in the digital world.</p>
+            <button class="btn btn_W bg-white  fw-bolder p-3 rounded-5 text-black">Read More</button>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div class="img_1 img-fluid rounded-circle"></div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </section>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
