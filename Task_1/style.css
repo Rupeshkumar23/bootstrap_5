@@ -111,8 +111,8 @@ button:hover {
   transition: .5s;
 }
 .img_1{
-  width: 500px!important;
-  height: 500px !important;
+  min-width: 393px!important;
+  height: 400px !important;
   border: 10px solid rgba(255, 255, 255,.1);
   background-image: linear-gradient(orange,red),url(./Imgs/Lap.jpg);
   border-radius: 20%!important;
@@ -120,10 +120,29 @@ button:hover {
   background-position: center;
   object-fit: cover;
   background-blend-mode:color;
+  box-shadow: rgba(255, 85, 2, 0.8) 0px 30px 90px;
 } 
 .btn_W:hover{
   background-color: orangered!important;
   color: #ffffff!important;
   transition: .3s;
   border: 1px solid white;
+}
+a.title_t{
+  color: orangered;
+}
+.fa-facebook-f,.fa-youtube,.fa-whatsapp,.fa-instagram{
+  color: #ffffff;
+  transition: .3s;
+}
+.icon-hover-effect:hover {
+  color: orangered;
+}
+.btn_L{
+  background-color: orangered;
+}
+.btn_F{
+  background-color: rgba(255, 255, 255, .1);
+  border: 3px solid orangered;
+  box-shadow: rgba(255, 85, 0, 0.4) 0px 30px 90px;
 }
