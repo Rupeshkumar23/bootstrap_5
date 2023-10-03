@@ -1,159 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link rel="stylesheet" href="./style.css">
-  <title>Bootstrap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./style.css">
+    <title>Bootstrap</title>
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <!-- "RK" aligned to the left -->
-        <div class="navbar-brand">
-          <a class="navbar-brand fw-bold fs-2" href="#">R <b>K</b></a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-brand fw-bold fs-2" href="#">R <b>K</b></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 fw-semibold">
+                        <li class="nav-item">
+                            <a class="nav-link active home" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div id="carouselExampleControlsNoTouching" class="carousel slide carousel-fade" data-bs-touch="false">
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="0" class="active num_1" aria-current="true" aria-label="Slide 1">01</button>
+                <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="1" aria-label="Slide 2" class="num_1">02</button>
+                <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="2" aria-label="Slide 3" class="num_1">03</button>
+            </div>
+            <!-- Carousel Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Imgs/Hacker.jpg" class="d-block w-100" alt="S_1" />
+                    <div class="carousel-caption d- d-md-block head">
+                        <h5 class="display-4  fw-bold">
+                            R <span>K</span> Software Solution
+                        </h5>
+                        <p class="display-5">Learn More Be Smart</p>
+                        <button class="Sign_in btn_B">Sign In</button>
+                        <button class="btn_B">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Imgs/Slide_2.jpg" class="d-block w-100" alt="S_2" />
+                    <div class="carousel-caption d-none d-md-block head">
+                        <h5 class="display-4 fw-bold">
+                            R <span>K</span> Software Solution
+                        </h5>
+                        <p class="display-5">Learn More Be Smart</p>
+                        <button class="Sign_in btn_B">Sign In</button>
+                        <button class="btn_B">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Imgs/Slide_3.jpg" class="d-block w-100" alt="S_3" />
+                    <div class="carousel-caption d-none d-md-block head">
+                        <h5 class="display-4 fw-bold">
+                            R <span>K</span> Software Solution
+                        </h5>
+                        <p class="display-5">Learn More Be Smart</p>
+                        <button class="Sign_in btn_B">Sign In</button>
+                        <button class="btn_B">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <!-- Toggler button for mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Navigation links aligned to the right -->
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 fw-semibold">
-            <li class="nav-item">
-              <a class="nav-link active home" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <section>
-    <div id="carouselExampleControlsNoTouching" class="carousel slide carousel-fade" data-bs-touch="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="0" class="active num_1" aria-current="true" aria-label="Slide 1">01</button>
-        <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="1" aria-label="Slide 2 "class="num_1">02</button>
-        <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="2" aria-label="Slide 3" class="num_1">03</button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="./Imgs/Hacker.jpg" class="d-block w-100" alt="S_1">
-          <div class="carousel-caption d-none d-md-block head">
-              <h5 class="display-4 fw-bold ">R <span>K</span> Software Solution</h5>
-              <p class="display-5">Learn More Be Smart</p>
-              <button class="Sign_in btn_B ">Sign In</button>
-              <button class="btn_B">Read More</button>
-          </div>
-        </div>
-        <div class="carousel-item " data-bs-interval="2000">
-          <img src="./Imgs/Slide_2.jpg" class="d-block w-100" alt="S_2">
-          <div class="carousel-caption d-none d-md-block head">
-              <h5 class="display-4 fw-bold">R <span>K</span> Software Solution</h5>
-              <p class="display-5">Learn More Be Smart</p>
-              <button class="Sign_in btn_B">Sign In</button>
-              <button class="btn_B">Read More</button>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="1000">
-          <img src="./Imgs/Slide_3.jpg" class="d-block w-100" alt="S_3">
-          <div class="carousel-caption d-none d-md-block head">
-              <h5 class="display-4 fw-bold">R <span>K</span> Software Solution</h5>
-              <p class="display-5">Learn More Be Smart</p>
-              <button class="Sign_in btn_B">Sign In</button>
-              <button class="btn_B">Read More</button>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <section id="services" class="mt-5">
-      <hr class="text-white">
-      <hr class="text-white">
-      <hr class="text-white"> 
-      <hr class="text-white"> 
-      <h1 class="display-3 text-center">Our Services</h1>
-      <div class="container-lg d-flex flex-wrap justify-content-center my-5">
-        <div class="card mx-3 my-3  rounded-5 font_C">
-          <i class="fa-solid fa-laptop-code d-flex justify-content-center mt-4 display-3"></i>
-          <div class="card-body">
-            <h3 class="fs-4 fw-bold text-center text-uppercase">Coding</h3>
-            <p class="card-text">Explore the world of programming and coding languages. From Python and JavaScript to Java and C++, embark on a journey to develop software solutions and create digital wonders.</p>
-          </div>
-        </div>
-        <div class="card mx-3 my-3 rounded-5 font_C ">
-          <i class="fa-solid fa-network-wired  d-flex justify-content-center mt-4 display-3"></i>
-          <div class="card-body">
-            <h3 class="fs-4 fw-bold text-center text-uppercase"> Network-Wired</h3>
-            <p class="card-text">Delve into the intricacies of network infrastructure. Learn about wired connections, routers, switches, and the technologies that keep the digital world connected seamlessly.</p>
-          </div>
-        </div>
-        <div class="card mx-3 my-3 rounded-5 font_C ">
-          <i class="fa-solid fa-database d-flex justify-content-center mt-4 display-3"></i>
-          <div class="card-body">
-            <h3 class="fs-4 fw-bold text-center text-uppercase">Database</h3>
-            <p class="card-text">Dive into the realm of databases and data management. Discover the power of structured data storage, retrieval, and analysis, essential for modern applications and information systems.</p>
-          </div>
-        </div>
-      </div>
+        <section id="services" class="mt-5">
+            <hr class="text-white" />
+            <hr class="text-white" />
+            <hr class="text-white" />
+            <hr class="text-white" />
+            <h1 class="display-3 text-center">Our Services</h1>
+            <div class="container-lg d-flex flex-wrap justify-content-center my-5">
+                <div class="card mx-3 my-3 rounded-5 font_C col-12 col-md-6 col-lg-4">
+                    <i class="fa-solid fa-laptop-code d-flex justify-content-center mt-4 display-3"></i>
+                    <div class="card-body">
+                        <h3 class="fs-4 fw-bold text-center text-uppercase">Coding</h3>
+                        <p class="card-text">
+                            Explore the world of programming and coding languages. From Python and JavaScript to Java and C++, embark on a journey to develop software solutions and create digital wonders.
+                        </p>
+                    </div>
+                </div>
+                <div class="card mx-3 my-3 rounded-5 font_C col-12 col-md-6 col-lg-4">
+                    <i class="fa-solid fa-network-wired d-flex justify-content-center mt-4 display-3"></i>
+                    <div class="card-body">
+                        <h3 class="fs-4 fw-bold text-center text-uppercase">Network-Wired</h3>
+                        <p class="card-text">
+                            Delve into the intricacies of network infrastructure. Learn about wired connections, routers, switches, and the technologies that keep the digital world connected seamlessly.
+                        </p>
+                    </div>
+                </div>
+                <div class="card mx-3 my-3 rounded-5 font_C col-12 col-md-6 col-lg-4">
+                    <i class="fa-solid fa-database d-flex justify-content-center mt-4 display-3"></i>
+                    <div class="card-body">
+                        <h3 class="fs-4 fw-bold text-center text-uppercase">Database</h3>
+                        <p class="card-text">
+                            Dive into the realm of databases and data management. Discover the power of structured data storage, retrieval, and analysis, essential for modern applications and information systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <hr class="text-white" />
+            <hr class="text-white" />
+            <hr class="text-white" />
+            <hr class="text-white" />
+            <h1 class="display-3 text-center">About us</h1>
+            <section class="container-fluid d-flex justify-content-sm-center align-items-center justify-content-center mt-5" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('./Imgs/BG_Or.jpg'); background-size: cover; width: 99.3%; min-height: 600px;">
+                <div class="row p-4 container-fluid">
+                    <div class="col-lg-6">
+                        <h1 class="display-5 text-white col-12">
+                            Welcome to R<span>K</span> SOFTWARE SOLUTION
+                        </h1>
+                        <p class="lead text-white">
+                            At R K SOFTWARE SOLUTION, we are dedicated to providing cutting-edge solutions and knowledge to empower individuals and businesses. Our mission is to help you succeed in the digital world.
+                        </p>
+                        <button class="btn btn_W bg-white fw-bolder p-3 rounded-5 text-black">Read More</button>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-center g-5">
+                        <div class="img_1 img-fluid rounded-circle"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
     </section>
+    <footer class="site-footer bg-black text-white mt-4">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="foot-about mt-5">
+                            <h2>
+                                <a class="fw-bold fs-2 text-white text-decoration-none" href="#">R <b>K</b></a>
+                            </h2>
+                            <p>
+                              At R K SOFTWARE SOLUTION, our commitment is to deliver innovative solutions and expertise that empower individuals and businesses. Our core mission revolves around ensuring your success in the ever-evolving digital landscape.                            </p>
+                            <ul class="fs-3 d-flex flex-wrap align-items-center gap-4 list-unstyled">
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-facebook-f icon-hover-effect"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-youtube icon-hover-effect"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-whatsapp icon-hover-effect"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-instagram icon-hover-effect"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-5">
+                        <h2>Useful Links</h2>
+                        <ul class="list-unstyled">
+                            <li class="gap_l">
+                                <a class="text-decoration-none text-white" href="#">Services</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">Our Team</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">Client Testimonials</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">Portfolio</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-white" href="#">FAQs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-5">
+                        <div class="foot-latest-news">
+                            <h2>Latest News</h2>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <h3><a class="title_t" href="#">New Product Launch</a></h3>
+                                    <div class="posted-date">October 5, 2023</div>
+                                    <p>
+                                        Discover our latest product that will revolutionize the industry.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3><a class="title_t" href="#">Customer Success Stories</a></h3>
+                                    <div class="posted-date">October 3, 2023</div>
+                                    <p>
+                                        Read about how our solutions have helped our clients achieve success.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3><a class="title_t" href="#">Upcoming Events</a></h3>
+                                    <div class="posted-date">October 1, 2023</div>
+                                    <p>
+                                        Join us at upcoming events and stay updated with our activities.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mt-5">
+                        <div class="foot-contact">
+                            <h2>Contact</h2>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fa fa-phone"></i><span class="text-white ms-2">+45 677 8993000 223</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i><span><a href="#" class="text-decoration-none text-white ms-2">Email</a></span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker"></i><span class="text-white ms-2">Main Str. no 45-46, b3, 56832, Los Angeles, CA</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subscribe-form ">
+                            <form class="was-validated d-flex align-items-center">
+                                <input class="form-control is-invalid px-3 py-2 rounded-3 border-0" type="email" placeholder="Your email" required />
+                                <input class=" px-3 py-2 rounded-3 border-0 ms-2 text-white btn_L" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" type="submit" value="Send" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <section id="about">
-      <hr class="text-white">
-      <hr class="text-white">
-      <hr class="text-white"> 
-      <hr class="text-white"> 
-      <h1 class="display-3 text-center">About us</h1>
-      <section class="container-md  d-flex align-items-center justify-content-center mt-5" style="background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.7)), url('./Imgs/BG_Or.jpg'); background-size: cover; width: 99.3%;  min-height: 600px;">
-        <div class="row p-4">
-          <div class="col-lg-6">
-            <h1 class="display-5 text-white">Welcome to R<span>K</span> SOFTWARE SOLUTION</h1>
-            <p class="lead text-white">At R K SOFTWARE SOLUTION, we are dedicated to providing cutting-edge solutions and knowledge to empower individuals and businesses. Our mission is to help you succeed in the digital world.</p>
-            <button class="btn btn_W bg-white  fw-bolder p-3 rounded-5 text-black">Read More</button>
-          </div>
-          <div class="col-lg-6 d-flex justify-content-center">
-            <div class="img_1 img-fluid rounded-circle"></div>
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content btn_F">
+              <div class="modal-header">
+                <h1 class="modal-title fs-3 fw-bolder text-white" id="exampleModalToggleLabel">Your Mail</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fs-3 fw-bolder text-white">
+                Successfully Sent...<a href="./Imgs/icons8-done.gif" alt="icon" width="3px" height="3px"></a>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn_L bg-black text-white fw-bold" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">OK</button> 
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-    </section>
-  </section>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"
-  ></script>
+        
+        
+
+        <div class="footer-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="m-0 text-center p-3">
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
