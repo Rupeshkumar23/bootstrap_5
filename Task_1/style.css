@@ -5,10 +5,18 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+::selection{
+  color: #ffffff;
+  background-color: orangered;
+}
+section,footer{
+  padding-top: 70px;
+}
 b {
   color: orangered;
   font-family: 'Lobster', cursive;
 }
+
 nav ul li {
   list-style: none;
   display: inline-block;
